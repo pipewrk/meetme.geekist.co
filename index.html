@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet with Jason Joseph Nathan</title>
+  <meta name="description" content="Schedule a meeting with Jason Joseph Nathan">
+  <meta property="og:title" content="Meet with Jason Joseph Nathan">
+  <meta property="og:description" content="Schedule a meeting with Jason Joseph Nathan">
+  <meta property="og:image" content="https://meetme.geekist.co/jason-joseph-nathan.png">
+  <link rel="icon" type="image/x-icon" href="https://meetme.geekist.co/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #2f343a; /* Dark theme background color */
+      color: #fff;
+    }
+   .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+     .centered-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+     }
+    .centered-video {
+      width: 250px; /* Half the original size of 500px */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px; /* Optional: to match container's rounded corners */
+    }
+    @media (max-width: 768px) { /* Adjust size for mobile devices */
+      .centered-video {
+        width: 166px; /* One third of 250px */
+      }
+    }    
+  </style>
+</head>
+<body>
+    <div class="centered-container">
+        <a class="centered-link" target="_blank" href="https://geekist.co">
+            <video class="centered-video" autoplay muted>
+                <source src="https://meetme.geekist.co/geekist.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+	</a>
+    </div>	
+  <div class="container">
+    <div id="my-cal-inline" style="width:100%;height:100%;overflow:scroll"></div>
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "60min", {origin:"https://cal.com"});
+      Cal.ns["60min"]("inline", {
+	defaultDuration: 60,      
+        elementOrSelector:"#my-cal-inline",
+        calLink: "jason-joseph-nathan/60min",
+        layout: "month_view",
+      });
+      Cal.ns["60min"]("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
+  </div>
+</body>
+</html>

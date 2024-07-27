@@ -1,0 +1,7 @@
+ssl_certificate /etc/letsencrypt/live/geekist.co/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/geekist.co/privkey.pem;
+ssl_session_tickets off;
+ssl_stapling on;
+ssl_stapling_verify on;
+add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+ssl_buffer_size 4k;
